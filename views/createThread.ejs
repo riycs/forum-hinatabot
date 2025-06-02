@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Thread Baru</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <div class="max-w-md mx-auto p-4">
+    <!-- Header -->
+    <header class="mb-4">
+      <h1 class="text-xl font-bold text-blue-700">📝 Buat Thread Baru</h1>
+      <a href="/threads" class="text-sm text-blue-600 hover:underline">← Kembali ke Threads</a>
+    </header>
+
+    <!-- Form -->
+    <form method="POST" action="/threads" class="bg-white p-4 rounded shadow space-y-4">
+      <div>
+        <label for="title" class="block text-sm font-medium text-gray-700">Judul Thread</label>
+        <input type="text" id="title" name="title" required
+          class="w-full mt-1 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-200">
+      </div>
+
+      <div>
+        <label for="body" class="block text-sm font-medium text-gray-700">Isi Thread</label>
+        <textarea id="body" name="body" rows="5" required
+          class="w-full mt-1 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-200"></textarea>
+      </div>
+
+      <div class="flex justify-end">
+        <button type="submit"
+          class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buat Thread</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

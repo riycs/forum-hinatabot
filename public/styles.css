@@ -1,0 +1,102 @@
+.role-badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  margin-left: 6px;
+  user-select: none;
+  display: inline-block;
+}
+
+/* Warna unik per role */
+.role-badge.hinaters {
+  background-color: #6b7280; /* abu-abu */
+}
+
+.role-badge.admin {
+  background-color: #ef4444; /* merah */
+}
+
+.role-badge.moderator {
+  background-color: #3b82f6; /* biru */
+}
+
+.role-badge.ceo {
+  background-color: #fbbf24; /* emas muda */
+  color: #1f2937;
+}
+
+.role-badge.founder {
+  background-color: #10b981; /* hijau tosca */
+}
+
+/* Badge base */
+.role-badge {
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  margin-left: 6px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Role Colors */
+.role-hinaters {
+  background: #38bdf8;
+  animation-name: snowFall;
+}
+
+.role-admin {
+  background: #8b5cf6;
+  animation-name: pulse;
+}
+
+.role-moderator {
+  background: #14b8a6;
+  animation-name: wave;
+}
+
+.role-ceo {
+  background: #facc15;
+  color: black;
+  animation-name: flicker;
+}
+
+.role-founder {
+  background: #ef4444;
+  animation-name: fireGlow;
+}
+
+/* Animations */
+@keyframes snowFall {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(1px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.85; }
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes fireGlow {
+  0% { box-shadow: 0 0 4px #f87171; }
+  50% { box-shadow: 0 0 12px #dc2626; }
+  100% { box-shadow: 0 0 4px #f87171; }
+}
+
